@@ -24,6 +24,6 @@
     // hàm str_replace: thay thế chuỗi con trong chuỗi mẹ
     echo "Hàm str_replace";
     echo "<br>";
-    echo str_replace("Alex", "Simon", "Alex Phan");
+    echo str_replace("Alex", "Simon", "Alex Vargas Phan");
     echo "<br>";
 ?>
