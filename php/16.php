@@ -41,4 +41,28 @@
     } else {
         echo "$d không bằng $e";
     }
+    echo "<br>";
+    // toán tử tăng và giảm
+    echo "Toán tử tăng và giảm";
+    echo "<br>";
+    $f = 20;
+    echo ++$f;
+    echo "<br>";
+    echo --$f;
+    /*
+    sự khác nhau giữa ++$f và $f++ là:
+    ++$f: toán tử tiền tố (tăng giá trị trước rồi mới sử dụng)
+    ví dụ:
+    $f = 20;
+    $g = ++$f
+    ở đây khởi tạo $f = 20 sau đó tăng giá trị $f lên 1 thành 21
+    rồi mới gán giá trị 21 cho $g
+
+    còn $f++: toán tử hậu tố (sử dụng giá trị trước rồi mới tăng)
+    ví dụ:
+    $f =20;
+    $g = $f++
+    ở đây khởi tạo $f =20 sau đó gán giá trị 20 cho $g
+    rồi mới tăng giá trị $f lên 1 thành 21
+    */ 
 ?>
