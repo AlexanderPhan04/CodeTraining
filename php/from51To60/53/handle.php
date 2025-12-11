@@ -10,6 +10,8 @@
                 move_uploaded_file($_FILES['img']['tmp_name'], './/img/' . $_FILES['img']['name']);
                 echo "upload success";
             }
+        } else {
+            echo "false to upload file";
         }
     }
 ?>
