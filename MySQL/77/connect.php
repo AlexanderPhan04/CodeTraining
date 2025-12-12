@@ -7,7 +7,7 @@
     $server = 'localhost';
     $user = 'root';
     $password = '';
-    $DB = 'myWeb';
+    $DB = 'myWeb1';
 
     // tạo kết nối 
     $conn = new mysqli($server, $user, $password, $DB); // hàm mysqli_connect trả về đối tượng kết nối
