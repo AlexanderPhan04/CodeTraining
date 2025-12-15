@@ -1,4 +1,4 @@
-<!-- câu lệnh AND trong mysql -->
+<!-- câu lệnh LIKE trong mysql -->
 <?php
     include 'connect.php';
     /*
@@ -10,9 +10,9 @@
     LIMIT = giới hạn số kết quả trả về
     */ 
 
-    // câu lệnh AND dùng để kết hợp nhiều điều kiện
+    // câu lệnh LIKE dùng để tìm kiếm theo mẫu
 
-    $sql = "SELECT * FROM users WHERE username='agent' AND id=2";
+    $sql = "SELECT * FROM users WHERE username LIKE '%ad%'";
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) > 0)

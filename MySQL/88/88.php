@@ -1,4 +1,4 @@
-<!-- câu lệnh AND trong mysql -->
+<!-- câu lệnh ORDER BY trong mysql -->
 <?php
     include 'connect.php';
     /*
@@ -10,9 +10,8 @@
     LIMIT = giới hạn số kết quả trả về
     */ 
 
-    // câu lệnh AND dùng để kết hợp nhiều điều kiện
-
-    $sql = "SELECT * FROM users WHERE username='agent' AND id=2";
+    // câu lệnh ORDER BY dùng để sắp xếp kết quả
+    $sql = "SELECT * FROM users ORDER BY id DESC";
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) > 0)

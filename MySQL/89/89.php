@@ -1,4 +1,4 @@
-<!-- câu lệnh AND trong mysql -->
+<!-- câu lệnh LIMIT trong mysql -->
 <?php
     include 'connect.php';
     /*
@@ -10,9 +10,8 @@
     LIMIT = giới hạn số kết quả trả về
     */ 
 
-    // câu lệnh AND dùng để kết hợp nhiều điều kiện
-
-    $sql = "SELECT * FROM users WHERE username='agent' AND id=2";
+    // câu lệnh LIMIT dùng để giới hạn số kết quả trả về
+    $sql = "SELECT * FROM users LIMIT 2";
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) > 0)

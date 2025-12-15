@@ -1,4 +1,4 @@
-<!-- câu lệnh AND trong mysql -->
+<!-- câu lệnh OR trong mysql -->
 <?php
     include 'connect.php';
     /*
@@ -10,9 +10,9 @@
     LIMIT = giới hạn số kết quả trả về
     */ 
 
-    // câu lệnh AND dùng để kết hợp nhiều điều kiện
+    // câu lệnh OR dùng để kết hợp nhiều điều kiện
 
-    $sql = "SELECT * FROM users WHERE username='agent' AND id=2";
+    $sql = "SELECT * FROM users WHERE id=100 OR username='admin'";
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) > 0)
