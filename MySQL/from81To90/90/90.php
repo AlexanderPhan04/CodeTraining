@@ -11,7 +11,7 @@
     */ 
 
     // câu lệnh RAND() dùng đê lấy ngẫu nhiên một số kết quả
-    $sql = "SELECT * FROM users LIMIT 2";
+    $sql = "SELECT * FROM users ORDER BY RAND() LIMIT 2";
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) > 0)
