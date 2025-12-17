@@ -11,7 +11,7 @@
     */ 
 
     // câu lệnh INNER JOIN dùng để kết hợp các bảng với nhau dựa trên một điều kiện chung
-    $sql = "SELECT * FROM users ORDER BY RAND() LIMIT 2";
+    $sql = "SELECT users.id, username, password, level, full_name, gender FROM users INNER JOIN details ON users.id=details.id";
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) > 0)
