@@ -1,3 +1,4 @@
+<!-- 96 - 101-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,8 +32,13 @@
             <td><img width="30" height="40" src="img\product\<?php echo $row['product_photo'] ?>" alt=""></td>
             <td><?php echo $row['product_price'] ?></td>
             <td><?php echo $row['guarantee'] ?></td>
+            <span><a href="deleteProduct.php?this_id=<?php echo $row['id'] ?>">Delete</a></span>
+            <span><a href="editProduct.php?this_id=<?php echo $row['id'] ?>">Edit</a></span>
+            <br><br>
         </tr>
         <?php } ?>
     </tbody>
+    <br>
+    <a href="addProduct.php">Add</a>
 </body>
 </html>
