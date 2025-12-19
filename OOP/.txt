@@ -1,0 +1,18 @@
+114
+lập trình truyền thống
+- không có cấu trúc
+- hướng thủ tục (hàm riêng)
+- hướng modun (nhiều chương trình có tác dụng giống nhau gộp lại thành 1 modun để gọi)
+lập trình hướng đối tượng
+- 
+115
+đối tượng trong thế giới thực
++ đối tượng: con chó
+dữ liệu: tên, màu, giống loại
+hành động: sủa, chạy, ăn
+
++ xe đạp
+bánh răng, bàn đạp, dây xích
+tăng tốc, giảm tốc
+
+đối tượng trong lập trình
