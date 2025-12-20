@@ -33,5 +33,5 @@
     }
 
     $object = new C();
-    $object->showProtected();
+    // $object->showProtected();
 ?>

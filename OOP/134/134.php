@@ -1,0 +1,4 @@
+<!-- OOP - interface -->
+<?php
+    
+?>
