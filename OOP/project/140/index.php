@@ -1,4 +1,4 @@
-<!-- OOP - tạo DB và kết nối -->
+<!-- OOP - lấy dữ liệu -->
 <?php
     include 'config/database.php';
 
@@ -11,8 +11,10 @@
         $i++;
 
         echo "<tr";
-        echo "<td>" . $r['id'] . "</td>";
+        echo "<h1>" . $r['id'] . "</h1>";
+        echo "<td>" . $r['full_name'] . "</td>";
         echo "<td>" . $r['user'] . "</td>";
+        echo "<td>" . $r['pass'] . "</td>";
         echo "</tr>";
 
         echo "<br>";
